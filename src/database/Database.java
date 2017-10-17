@@ -28,7 +28,7 @@ public class Database {
         String query = "INSERT INTO dokter (id_dokter, nama_dokter, jenis_kelamin, alamat_dokter, spesialis) VALUES ('"
                         +d.getId_dokter()+"','"+d.getNama()+"','"+d.getJenisKelamin()+"','"
                         +d.getAlamat()+"','"+d.getSpesialis()+"')";
-        System.out.println(query);
+        //System.out.println(query);
         statement.execute(query, Statement.RETURN_GENERATED_KEYS);
         ResultSet rs = statement.getGeneratedKeys(); 
     }
